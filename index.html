@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+   	<meta charset="UTF-8">
+	<!--RWD-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Komponenty JS</title>
+	<!--add fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<!--add bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<!--add CSS-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+ <body>
+	
+	<!--navbar-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+
+		<!--grouping elements into hamburger-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">
+					<p>Bootstrap v3.3 - komponenty JS</p>
+				</a>	
+			</div>
+
+		<!--elements for grouping-->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav text-center">
+					<li>
+						<a href="#myCarousel">Karuzela
+						</a>
+					</li>
+					<li>
+						<a href="#products">Produkty
+						</a>
+					</li>
+					<li>
+						<a href="#myModals">Modal
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--carousel-->
+	<div class="container-fluid">
+		<hr>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+			<!--indicators-->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>
+
+			<!--slides-->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active example-1">
+					<div class="carousel-caption">
+						<h1>Zdjęcie 1</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, natus.</p>
+					</div>
+				</div>
+				<div class="item example-2">
+					<div class="carousel-caption">
+						<h1>Zdjęcie 2</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, natus.</p>
+					</div>
+				</div>
+				<div class="item example-3">
+					<div class="carousel-caption">
+						<h1>Zdjęcie 3</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, natus.</p>
+					</div>
+				</div>
+				<div class="item example-4">
+					<div class="carousel-caption">
+						<h1>Zdjęcie 4</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, natus.</p>
+					</div>
+				</div>
+				<div class="item example-5">
+					<div class="carousel-caption">
+						<h1>Zdjęcie 5</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, natus.</p>
+					</div>
+				</div>
+			</div>
+
+			<!--carousel navigation-->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Poprzedni</span>	
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Następny</span>	
+			</a>
+		</div>
+		<hr>
+	</div>
+
+	<!--tabs-->
+	<div class="container-fluid product_tabs" id="products">
+		<ul class="nav nav-tabs nav-justified">
+			<li class="active">
+				<a data-toggle="tab" href="#product1">Produkt 1
+				</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#product2">Produkt 2
+				</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#product3">Produkt 3					
+				</a>
+			</li>
+		</ul>
+		<div class="tab-content text-justify">
+			<div id="product1" class="tab-pane fade in active">
+				<h3>PRODUKT 1</h3>
+				<div class="row">
+					<div class="col-xs-6">
+						<img class="img-responsive img-thumbnail" src="https://images.pexels.com/photos/84475/night-product-watch-dramatic-84475.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+					</div>
+					<div class="col-xs-6">
+						<h3>Cena: 2000 $</h3>
+					</div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem modi, qui veritatis odit. Id similique reiciendis odio temporibus et omnis ut, qui officiis quod nostrum, autem maxime incidunt pariatur voluptatem! Quo voluptatem, cupiditate! Dicta saepe distinctio ab expedita, quibusdam ex repellat, molestias reiciendis asperiores vero itaque adipisci sunt dignissimos quam animi illo ratione! Aspernatur inventore ut, unde eligendi ad. Perspiciatis aut eaque quam ullam aliquid incidunt, qui voluptate quasi ducimus saepe consequuntur, asperiores quibusdam rerum id eius nam laudantium veniam dolor quae veritatis expedita? Cupiditate provident dolor hic, cumque asperiores necessitatibus saepe fuga officiis at adipisci illum, reiciendis quis tempora!</p>
+				<div class="well well-sm">
+					<h3 class="text-center">Zamów teraz!</h3>
+					<p class="text-center">Otrzymaj 30% rabatu.</p>
+					<p class="text-center">
+						<a href="" class="btn btn-primary">Kupuję &rarr;</a>
+					</p>
+				</div>
+			</div>
+			<div id="product2" class="tab-pane fade">
+				<h3>PRODUKT 2</h3>
+				<div class="row">
+					<div class="col-xs-6">
+						<img class="img-responsive img-thumbnail" src="https://images.pexels.com/photos/371723/pexels-photo-371723.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+					</div>
+					<div class="col-xs-6">
+						<h3>Cena: 1200 $</h3>
+					</div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem modi, qui veritatis odit. Id similique reiciendis odio temporibus et omnis ut, qui officiis quod nostrum, autem maxime incidunt pariatur voluptatem! Quo voluptatem, cupiditate! Dicta saepe distinctio ab expedita, quibusdam ex repellat, molestias reiciendis asperiores vero itaque adipisci sunt dignissimos quam animi illo ratione! Aspernatur inventore ut, unde eligendi ad. Perspiciatis aut eaque quam ullam aliquid incidunt, qui voluptate quasi ducimus saepe consequuntur, asperiores quibusdam rerum id eius nam laudantium veniam dolor quae veritatis expedita? Cupiditate provident dolor hic, cumque asperiores necessitatibus saepe fuga officiis at adipisci illum, reiciendis quis tempora!</p>
+				<div class="well well-sm">
+					<h3 class="text-center">Zamów teraz!</h3>
+					<p class="text-center">Otrzymaj 10% rabatu.</p>
+					<p class="text-center">
+						<a href="" class="btn btn-primary">Kupuję &rarr;</a>
+					</p>
+				</div>
+			</div>
+			<div id="product3" class="tab-pane fade">
+				<h3>PRODUKT 3</h3>
+				<div class="row">
+					<div class="col-xs-6">
+						<img class="img-responsive img-thumbnail" src="https://images.pexels.com/photos/411592/pexels-photo-411592.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+					</div>
+					<div class="col-xs-6">
+						<h3>Cena: 9000 $</h3>
+					</div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem modi, qui veritatis odit. Id similique reiciendis odio temporibus et omnis ut, qui officiis quod nostrum, autem maxime incidunt pariatur voluptatem! Quo voluptatem, cupiditate! Dicta saepe distinctio ab expedita, quibusdam ex repellat, molestias reiciendis asperiores vero itaque adipisci sunt dignissimos quam animi illo ratione! Aspernatur inventore ut, unde eligendi ad. Perspiciatis aut eaque quam ullam aliquid incidunt, qui voluptate quasi ducimus saepe consequuntur, asperiores quibusdam rerum id eius nam laudantium veniam dolor quae veritatis expedita? Cupiditate provident dolor hic, cumque asperiores necessitatibus saepe fuga officiis at adipisci illum, reiciendis quis tempora!</p>
+				<div class="well well-sm">
+					<h3 class="text-center">Zamów teraz!</h3>
+					<p class="text-center">Otrzymaj 18% rabatu.</p>
+					<p class="text-center">
+						<a href="" class="btn btn-primary">Kupuję &rarr;</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+	<!--modal-->
+	<div class="container-fluid text-center" id="myModals">
+		<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Niespodzianka</button>
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1>Kupując dziś produkt objęty promocją otrzymujesz nagrodę niespodziankę!</h1>
+					</div>
+					<div class="modal-body text-justify">
+						<img class="img-responsive img-thumbnail" src="https://images.pexels.com/photos/411592/pexels-photo-411592.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum, sint asperiores. Modi accusantium iusto expedita ratione dicta ducimus nulla saepe adipisci omnis, eaque vitae consequatur rem, corrupti officia optio asperiores facere, reiciendis dolorum suscipit inventore. Repellendus ex laborum laudantium assumenda, porro voluptates nostrum molestias natus officiis magni illo aperiam accusamus iure amet suscipit adipisci hic dicta saepe, quis cum? Tenetur expedita debitis, fugiat maxime inventore animi maiores ratione, id placeat illo quis recusandae excepturi consequatur dolore deleniti sit officia autem eos? Incidunt, dolorem! Cum non veniam animi nostrum ipsam impedit illo soluta rerum alias, reprehenderit a repellendus qui aliquam aperiam odio exercitationem omnis esse iusto, quisquam maiores. Consequuntur dignissimos aut corporis dolor quod. Ratione quidem, ipsa consequatur perspiciatis, consectetur necessitatibus ex similique doloribus fugit quas consequuntur corporis sed repudiandae dolore non odio magni sequi ducimus pariatur dolorum. Mollitia impedit maxime quos dicta. Doloribus libero dignissimos quod. Nobis suscipit possimus quisquam perspiciatis odit, vel in error, natus fugiat quasi modi adipisci aperiam, corrupti recusandae iste illo. Ducimus id quam dolor ex aliquam repellat repellendus aspernatur corporis. Aut, dolores dolorum et assumenda possimus accusantium fuga architecto modi enim earum, vero eveniet, in unde similique voluptatibus voluptas ipsum est natus molestias sapiente sequi mollitia. Amet, at veritatis, repellat quibusdam quaerat minus quam odit, nam aspernatur sint saepe consequuntur unde labore. Commodi esse nisi earum modi perferendis quibusdam ipsa error, aliquid atque suscipit porro excepturi eos totam ratione quis veritatis. Iusto culpa magnam eos? Ratione soluta inventore modi reiciendis tempore praesentium, delectus officia unde blanditiis fugiat mollitia doloribus optio voluptatibus dicta nisi sit, deleniti quas, vel sint aspernatur omnis asperiores, voluptas obcaecati vitae cumque? Inventore placeat laborum sapiente quia aperiam cum illo veritatis. Atque eum repellat porro id modi eos itaque repudiandae quae. Suscipit, fugiat! Mollitia amet, fugiat, culpa magni laborum accusantium necessitatibus!</p>
+					</div>
+					<div class="modal-footer">
+						<h4>Promocja obowiązuje do 10.11.2017 r.</h4>
+					</div>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Zamknij</button>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+		<div class="container-fluid text-center footer">
+			<div class="row">
+				<div class="col-xs-6">
+					<p>© 2017, WebDeveloper, All rights reserved</p>
+				</div>
+				<div class="col-xs-6">
+					<p> Web Design & Development by Dawid Brzozowski</p>
+				</div>
+			</div>
+		</div>
+
+	<!--add JavaScripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;	
+}
+body {
+	padding-top: 70px;
+}
+.navbar-brand p {
+	color: #303030;
+	font-weight: 700;
+}
+[class*="example"] {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.example-1 {
+	background-image: url(https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.example-2 {
+	background-image: url(https://images.pexels.com/photos/2988/pattern-triangles.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.example-3 {
+	background-image: url(https://images.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.example-4 {
+	background-image: url(https://images.pexels.com/photos/159420/piano-instrument-music-keys-159420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.example-5 {
+	background-image: url(https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.product_tabs {
+	padding-top: 15%;
+}
+#product1 img {
+	width: 100%;
+	margin-bottom: 2%;
+}
+#product2 img {
+	width: 100%;
+	margin-bottom: 2%;
+}
+#product3 img {
+	width: 100%;
+	margin-bottom: 2%;
+}
+#product1 h3, #product2 h3, #product3 h3 {
+	width: 100%;
+}
+#myModal .modal-content button {
+	margin-bottom: 5%;
+}
+s#product1, s#product2, s#product3 {
+	margin-top: 5%;
+}
+.footer {
+	background-color: #606060;
+	color: #fff;
+	height: 10%;
+}
+.sfooter p {
+	text-align: center;
+	vertical-align: middle;
+}
+.scol-xs-6 {
+	text-align: center;
+	vertical-align: middle;
+}
